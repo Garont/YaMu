@@ -8,13 +8,14 @@
 
 import Cocoa
 
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        // Code which should be launched before app main code starts
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
