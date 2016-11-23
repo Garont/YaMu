@@ -13,6 +13,7 @@
 		535F49F51DDBE44600A82DB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535F49F31DDBE44600A82DB3 /* Main.storyboard */; };
 		535F4A001DDBE44600A82DB3 /* YaMuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F49FF1DDBE44600A82DB3 /* YaMuTests.swift */; };
 		535F4A0B1DDBE44600A82DB3 /* YaMuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535F4A0A1DDBE44600A82DB3 /* YaMuUITests.swift */; };
+		535F4A1A1DDBE47500A82DB3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535F4A191DDBE47500A82DB3 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		531CC0E71DE5275700DEB920 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		535F49EA1DDBE44600A82DB3 /* YaMu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaMu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535F49ED1DDBE44600A82DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		535F49EF1DDBE44600A82DB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		535F4A061DDBE44600A82DB3 /* YaMuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaMuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		535F4A0A1DDBE44600A82DB3 /* YaMuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaMuUITests.swift; sourceTree = "<group>"; };
 		535F4A0C1DDBE44600A82DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535F4A191DDBE47500A82DB3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535F4A1A1DDBE47500A82DB3 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 				535F49FE1DDBE44600A82DB3 /* YaMuTests */,
 				535F4A091DDBE44600A82DB3 /* YaMuUITests */,
 				535F49EB1DDBE44600A82DB3 /* Products */,
+				535F4A181DDBE47500A82DB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +102,8 @@
 			children = (
 				535F49ED1DDBE44600A82DB3 /* AppDelegate.swift */,
 				535F49EF1DDBE44600A82DB3 /* ViewController.swift */,
-				535F49F11DDBE44600A82DB3 /* Assets.xcassets */,
 				535F49F31DDBE44600A82DB3 /* Main.storyboard */,
+				535F49F11DDBE44600A82DB3 /* Assets.xcassets */,
 				535F49F61DDBE44600A82DB3 /* Info.plist */,
 			);
 			path = YaMu;
@@ -120,6 +125,15 @@
 				535F4A0C1DDBE44600A82DB3 /* Info.plist */,
 			);
 			path = YaMuUITests;
+			sourceTree = "<group>";
+		};
+		535F4A181DDBE47500A82DB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				531CC0E71DE5275700DEB920 /* Social.framework */,
+				535F4A191DDBE47500A82DB3 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +510,7 @@
 				535F4A111DDBE44600A82DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		535F4A121DDBE44600A82DB3 /* Build configuration list for PBXNativeTarget "YaMuTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				535F4A141DDBE44600A82DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		535F4A151DDBE44600A82DB3 /* Build configuration list for PBXNativeTarget "YaMuUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +528,7 @@
 				535F4A171DDBE44600A82DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
